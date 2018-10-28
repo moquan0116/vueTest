@@ -11,6 +11,13 @@ export default {
         return {
             msg: 'Welcome to Your Vue.js App'
         };
+    },
+    created: function () {
+        this.axios.get().then(function (response) {
+            console.log(response);
+        }).catch(function (error) {
+            console.log(error);
+        });
     }
 };
 </script>

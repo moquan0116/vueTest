@@ -3,6 +3,9 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import axios from 'axios';
+axios.defaults.baseURL = 'http://127.0.0.1:4000/';
+Vue.use(axios);
 
 Vue.config.productionTip = false;
 
@@ -10,6 +13,7 @@ Vue.config.productionTip = false;
 new Vue({
     el: '#app',
     router,
+    axios,
     components: { App },
     template: '<App/>'
 });
