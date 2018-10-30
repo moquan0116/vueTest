@@ -13,11 +13,12 @@ export default {
         };
     },
     created: function () {
-        this.axios.get().then(function (response) {
+        console.log(111);
+        /* this.axios.get().then(function (response) {
             console.log(response);
         }).catch(function (error) {
             console.log(error);
-        });
+        }); */
     }
 };
 </script>

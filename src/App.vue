@@ -1,13 +1,9 @@
 <template>
     <div id="app-7">
-        <Todo ref="test"></Todo>
-        <input ref="input" type="text"/>
-        <button type="button" @click="show">点我</button>
     </div>
 </template>
 
 <script>
-import Todo from './components/Todo';
 export default {
     name: 'App',
     provide: function () {
@@ -26,6 +22,7 @@ export default {
         };
     },
     created: function () {
+        console.log(this.Test);
     },
     methods: {
         show: function () {
@@ -34,9 +31,6 @@ export default {
         getMap: function () {
             return '这是app根组件的getmap返回的数据';
         }
-    },
-    components: {
-        Todo
     }
 };
 </script>
